@@ -25,7 +25,7 @@ jobs:
           gradle-version: "8.7"
 
       - name: Compilar
-        run: gradle -p proj assembleDebug --no-daemon --stacktrace
+        run: gradle -p proj assembleDebug --no-daemon --console=plain
 
       - uses: actions/upload-artifact@v4
         with:
